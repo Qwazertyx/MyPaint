@@ -6,7 +6,7 @@
 #    By: vsedat <vsedat@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 15:08:55 by vsedat            #+#    #+#              #
-#    Updated: 2022/01/21 16:14:23 by vsedat           ###   ########lyon.fr    #
+#    Updated: 2022/01/21 16:22:41 by vsedat           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,8 @@ all: 	${NAME}
 
 test:
 			@echo "$(GREEN)ඞ this test is sus ඞ$(CYAN)"
+			@echo "$(BLUE)click to draw, click again to pause$(CYAN)"
+			@echo "$(RED)press C to erase and ECHAP to quit$(CYAN)"
 			@${CC} ${CMLX} ${SRCS} -o ${NAME}
 			@./${NAME}
 

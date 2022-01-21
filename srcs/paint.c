@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fractol.c                                          :+:      :+:    :+:   */
+/*   paint.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsedat <vsedat@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/21 10:06:39 by vsedat            #+#    #+#             */
-/*   Updated: 2022/01/21 16:11:54 by vsedat           ###   ########lyon.fr   */
+/*   Updated: 2022/01/21 16:20:32 by vsedat           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int	erase(t_data *data)
 		i++;
 	}
 	mlx_put_image_to_window(data->mlx, data->win, data->img, 0, 0);
+	return (0);
 }
 
 int	key_hook(int keycode, t_data *data)
